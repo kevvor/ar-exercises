@@ -12,4 +12,4 @@ pp @store1, @store2
 
 @store1.update(name: 'Van')
 
-pp @store1, @store2
+puts Store.count
