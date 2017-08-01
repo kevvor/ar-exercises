@@ -15,6 +15,8 @@ surrey = Store.create do |s|
   s.womens_apparel = true
 end
 
+@store3 = Store.find(4)
+
 whistler = Store.create do |w|
   w.name = "Whistler"
   w.annual_revenue = 1900000

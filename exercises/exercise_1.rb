@@ -5,12 +5,6 @@ puts "----------"
 
 # Your code goes below here ...
 
-class Store < ActiveRecord::Base
-
-  validates :name, presence: true
-  validates :annual_revenue, presence: true
-
-end
 
 burnaby = Store.create do |b|
   b.name = "Burnaby"
