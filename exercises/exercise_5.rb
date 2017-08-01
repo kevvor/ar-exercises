@@ -8,3 +8,11 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+
+@sum_annual_rev = Store.sum("annual_revenue")
+
+ptus @sum_annual_rev
+
+
+
+
