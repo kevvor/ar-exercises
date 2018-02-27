@@ -1,5 +1,6 @@
 require 'pry' # in case you want to use binding.pry
 require 'active_record'
+require 'figaro'
 require_relative 'lib/store'
 require_relative 'lib/employee'
 
@@ -10,8 +11,8 @@ puts 'Establishing connection to database ...'
 ActiveRecord::Base.establish_connection(
   adapter: 'postgresql',
   database: 'ar_exercises',
-  username: 'development',
-  password: 'development',
+  username: ENV['username'],
+  password: ENV['password'],
   host: 'localhost',
   port: 5432,
   pool: 5,
