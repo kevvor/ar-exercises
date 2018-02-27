@@ -4,12 +4,15 @@ require_relative './exercise_1'
 puts "Exercise 2"
 puts "----------"
 
-@store1 = Store.find(1)
-@store2 = Store.find(2)
+# Your code goes here ...
 
-puts 'this is the store'
-pp @store1, @store2
+@store1 = Store.find_by(id: 1)
+@store2 = Store.find_by(id: 2)
 
-@store1.update(name: 'Van')
+puts "store one name is #{@store1.name}"
 
-puts Store.count
+@store1.name = 'Metrotown'
+
+puts "store one name is #{@store1.name}"
+
+puts 'EXERCISE 2 COMPLETE'
